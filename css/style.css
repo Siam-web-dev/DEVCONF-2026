@@ -207,7 +207,7 @@ nav button{
   
   .pulse-badge {
     display: inline-block;
-    background-color: rgba(99, 102, 241, 0.15);
+    background-color: rgba(105, 70, 70, 0.15);
     color: #818cf8;
     font-size: 0.75rem;
     font-weight: 600;
@@ -273,7 +273,7 @@ nav button{
     left: 0;
     bottom: 0;
     background: linear-gradient(90deg, rgba(99, 102, 241, 0.15), rgba(99, 102, 241, 0.05));
-    border-right: 2px solid #6366f1;
+    border-right: 2px solid #2563EB;
     z-index: 1;
   }
   
@@ -289,7 +289,7 @@ nav button{
     position: relative;
     z-index: 2;
     font-weight: 600;
-    color: #818cf8;
+    color: #2563EB;
   }
   
   /* Footer Metadata */
@@ -317,4 +317,42 @@ nav button{
     height: 8px;
     background-color: #10b981;
     border-radius: 50%;
+  }
+
+  /* footer  */
+
+  footer{
+    background-color: #0D1B2A;
+  }
+  .footer-container{
+    padding: 10px;
+    margin: auto 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-L{
+    color: #FFFFFF;
+  }
+  .footer-img{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+
+  }
+  .footer-img img{
+    width: 30px; 
+    background-color: #b8c8f3;
+    border-radius: 50%;   
+    padding: 5px;
+  }
+  .footer-img h3{
+    color: #FFFFFF;
+  }
+  .policy{
+    display: flex;
+    gap: 30px;
   }
