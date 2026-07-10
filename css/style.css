@@ -5,14 +5,10 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
-button{
-    padding: 12px 40px;
-    border-radius: 12px;
-    background-color: #1D4ED8;
-    color: #FFFFFF;
-    border: none;
-}
-
+.font-weight{
+    font-weight: 300;
+} 
+/* common style  */
 nav{
     display: flex;
     justify-content: space-between;
@@ -29,6 +25,13 @@ nav{
 .menu ul li a{
     text-decoration: none;
     color: #575757;
+}
+nav button{
+    padding: 12px 40px;
+    border-radius: 12px;
+    background-color: #1D4ED8;
+    color: #FFFFFF;
+    border: none;
 }
 
 /* navbar end  */
@@ -63,6 +66,10 @@ nav{
 .hero-btn button{
     padding: 18px 50px;
     margin-bottom: 50px;
+    background-color: #1D4ED8;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px
 
 }
 
@@ -82,7 +89,7 @@ nav{
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     color: #0D1B2A;
 }
 .speaker-card{
@@ -95,9 +102,7 @@ nav{
     gap: 10px;
     padding: 20px;
 }
-.card-bottom p{
-    font-weight: 300;
-}
+
 .title{
     color: #2563EB;
 }
@@ -105,4 +110,76 @@ nav{
     width:100% ;
     display: block;
     border-radius: 16px 16px 0px 0px; 
+}
+
+/* speaker end  */
+/* pricing */
+
+.pricing-head{
+    margin-top: 120px;
+    text-align: center;
+    color: #0D1B2A;
+}
+.pricing-head h1{
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.pricing-container{
+    margin: auto 8%;
+    display: grid;
+    grid-template-columns: repeat(  3, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 100px;
+}
+.pricing-card{
+    margin-top: 50px;
+    width: 300px;
+    text-align: start;
+    padding: 32px;
+    background-color: #f6efef;
+    border-radius: 12px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    min-height: 350px;
+}
+.pricing-card h1 {
+    font-size: 44px;
+    color: #0D1B2A;
+}
+.pricing-card hr {
+    border: none;
+    height: 1px;
+    background-color: #bcb3b3;
+    margin: 10px 0px;
+}
+.pricing-card ul {
+    padding-left: 16px;
+}
+.pricing-card ul li{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+.pricing-card button {
+    padding: 10px 0px;
+    border: 1px solid #2563EB;
+    border-radius: 8px;
+}
+.premium{
+    background-color: #0D1B2A;
+    color: #FFFFFF;
+}
+.premium h1,
+.premium p,
+.premium ul li {
+    color: #FFFFFF;
+}
+
+.premium button {
+    background-color: #2563EB;
+    color: #FFFFFF;
 }
