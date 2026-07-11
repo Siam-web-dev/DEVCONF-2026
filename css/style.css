@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+body{
+  background-color: #dae2f1;
+}
 .font-weight{
     font-weight: 300;
 } 
@@ -116,7 +119,9 @@ nav button{
 /* pricing */
 
 .pricing-head{
+    margin: auto 8%;
     margin-top: 120px;
+    margin-bottom: 50px;
     text-align: center;
     color: #0D1B2A;
 }
@@ -132,10 +137,9 @@ nav button{
     justify-content: center;
     align-items: center;
     justify-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .pricing-card{
-    margin-top: 50px;
     width: 300px;
     text-align: start;
     padding: 32px;
@@ -144,7 +148,7 @@ nav button{
     display: flex;
     gap: 20px;
     flex-direction: column;
-    min-height: 350px;
+    height: auto;
 }
 .pricing-card h1 {
     font-size: 44px;
@@ -173,9 +177,7 @@ nav button{
     background-color: #0D1B2A;
     color: #FFFFFF;
 }
-.premium h1,
-.premium p,
-.premium ul li {
+.premium h1,.premium p,.premium ul li {
     color: #FFFFFF;
 }
 
@@ -186,17 +188,146 @@ nav button{
 
 /* unique section  */
 
+    /* another section  */
+  .terminal-section {
+    padding: 50px 8%;
+    background-color: #1f2937;
+  }
   
+  /* Heading */
+  
+  .terminal-heading {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .terminal-heading h1 {
+    font-size: 44px;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .terminal-heading p {
+    color: #8b949e;
+    font-size: 18px;
+  }
+  
+  /* Terminal */
+  
+  .terminal {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #161b22;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #30363d;
+    box-shadow:
+      0 15px 35px rgba(0, 0, 0, 0.35),
+      0 0 0 1px rgba(255, 255, 255, 0.03);
+  }
+  
+  /* Header */
+  
+  .terminal-header {
+    background-color: #222b3b;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #30363d;
+  }
+  
+  .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+  
+  .red {
+    background-color: #ff5f56;
+  }
+  
+  .yellow {
+    background-color: #ffbd2e;
+  }
+  
+  .green {
+    background-color: #27c93f;
+  }
+  
+  .terminal-title {
+    color: #8b949e;
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  
+  /* Body */
+  
+  .terminal-body {
+    padding: 40px;
+    font-family: monospace;
+  }
+  
+  .terminal-command {
+    margin-bottom: 30px;
+  }
+  
+  .terminal-body p {
+    color: #c9d1d9;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  .command {
+    color: #58a6ff;
+    font-weight: bold;
+  }
+  
+  .output {
+    color: #3fb950;
+    padding-left: 30px;
+  }
+  
+  /* Stats */
+  
+  .terminal-stats {
+    max-width: 850px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .stat-card {
+    background-color: #151a21;
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .stat-card h2 {
+    color: #58a6ff;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .stat-card p {
+    color: #8b949e;
+  }
+  /* another section end  */
+
+  /* 2nd another section  */
   /* Section Container */
   .pulse-section {
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 100px;
-    background: linear-gradient(145deg, #111827, #1f2937);
-    border: 1px solid #374151;
+    background: linear-gradient(145deg, #d5d5e2, #d8dde9);
+    border: 1px solid #7d8eab;
     border-radius: 16px;
     padding: 2.5rem;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 25px -5px rgba(56, 54, 54, 0.3);
   }
   
   /* Header Styling */
@@ -222,12 +353,12 @@ nav button{
   .pulse-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #0f172a;
     margin-bottom: 0.5rem;
   }
   
   .pulse-subtitle {
-    color: #9ca3af;
+    color: #222b3b;
     font-size: 1rem;
   }
   
@@ -272,7 +403,7 @@ nav button{
     top: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient(90deg, rgba(99, 102, 241, 0.15), rgba(99, 102, 241, 0.05));
+    background: linear-gradient(90deg, rgba(99, 102, 241, 0.15), rgba(199, 199, 215, 0.05));
     border-right: 2px solid #2563EB;
     z-index: 1;
   }
@@ -318,8 +449,9 @@ nav button{
     background-color: #10b981;
     border-radius: 50%;
   }
+  /* 2nd another section end  */
 
-  /* footer  */
+  /* footer section  */
 
   footer{
     background-color: #0D1B2A;
@@ -356,3 +488,4 @@ nav button{
     display: flex;
     gap: 30px;
   }
+  /* footer end  */
